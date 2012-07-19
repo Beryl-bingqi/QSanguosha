@@ -134,12 +134,13 @@ void Player::clearFlags(){
 }
 
 int Player::getAttackRange() const{
+    int extra = getMark("@sword") > 0 ? getMark("@sword") : 0;
     if(weapon)
-        return weapon->getRange();
+        return weapon->getRange() + extra;
     else if(hasSkill("zhengfeng"))
-        return hp;
+        return hp + extra;
     else
-        return 1;
+        return 1 + extra;
 }
 
 bool Player::inMyAttackRange(const Player *other) const{
@@ -310,7 +311,7 @@ bool Player::hasLordSkill(const QString &skill_name) const{
 }
 
 bool Player::loseSkills() const{
-    return (getMark("@duanchang")) > 0;
+    return (getMark("@duanchang") + getMark("@huoshui") + getMark("@qingcheng")) > 0;
 }
 
 

@@ -50,6 +50,7 @@ SOURCES += \
 	src/package/exppattern.cpp \
 	src/package/firepackage.cpp \
 	src/package/god.cpp \
+    src/package/hegemony.cpp \
 	src/package/joypackage.cpp \
 	src/package/lingpackage.cpp \
 	src/package/maneuvering.cpp \
@@ -179,6 +180,7 @@ HEADERS += \
 	src/package/exppattern.h \
 	src/package/firepackage.h \
 	src/package/god.h \
+    src/package/hegemony.h \
 	src/package/joypackage.h \
 	src/package/lingpackage.h \
 	src/package/maneuvering.h \
