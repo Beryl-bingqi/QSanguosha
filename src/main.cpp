@@ -14,6 +14,7 @@
 
 int main(int argc, char *argv[])
 {    
+    cout << "*******************************San Guo Sha***************************************************" << endl;
     if(argc > 1 && strcmp(argv[1], "-server") == 0)
         new QCoreApplication(argc, argv);
     else
